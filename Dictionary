@@ -1,0 +1,26 @@
+dictionary = {
+    "apple",
+    "book",
+    "car",
+    "dog",
+    "elephant",
+    "flower",
+    "house",
+    "ice",
+    "juice",
+    "key"
+}
+
+word = input("Please enter an English word:").lower()
+
+if word in dictionary:
+    print(f"Meaning'{word}' is: {dictionary[word]}")
+else:
+    knows = input("This word is not in dictionary do you know the meaning? (Yes or No)").strip().lower()
+    
+    if knows == "Yes":
+        meaning = input("Please enter the word meaing:").strip()
+        dictionary[word] = meaning
+        print(f"word'{word}'with meaning'{meaning}'has been added to dictionary.")
+    else:
+        print("Goodbye")
