@@ -7,7 +7,7 @@ for i in text:
         txt.append(i)
     else:
         repeat.append(i)    
-print(f"horoftekrari is: {repeat}") 
+print(f"Repeated words are: {repeat}") 
 l=len(txt)
 s=0
 for i in txt:
